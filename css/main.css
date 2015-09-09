@@ -1,0 +1,222 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic);
+@import url(http://fonts.googleapis.com/css?family=Tangerine:700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(https://fonts.googleapis.com/css?family=Eagle+Lake);
+
+html {
+	background-color: #1a1a1a;
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	padding: 0;
+}
+
+body {
+	background: url("../img/concrete.png");
+	background-color: #ecf0f1;
+	font-size: 11pt;
+	font-family: 'lato_reg', 'Cabin', Arial, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	position: relative;
+}
+
+.page-header {
+	padding-bottom: 0;
+	margin: 0 0 0 0;
+}
+
+header {
+	height: 450px;
+	width: 100%;
+	font-family: 'Tangerine', 'Droid Serif', 'Cabin', Arial, sans-serif;
+	font-weight: 200;
+	font-style: italic;
+	text-align: center;
+	color:#ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+body h1 {
+	font-family: 'Cinzel', 'Eagle Lake', 'Raleway', 'Cabin', Arial, sans-serif;
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 55px;
+	font-family: 'Cinzel', 'League Spartan', 'Raleway', Arial, sans-serif;
+	margin-left: auto;
+	padding-left: .5em;
+	margin-right: auto;
+}
+
+body h3 img {
+	width: 100px;
+	height: auto;
+	alignment: center;
+}
+
+header h2 {
+	opacity: .8;
+	position: center;
+	font-size: 60px;
+	padding-top: 200px;
+	margin: 0 0 0 0;
+}
+
+.quote {
+	position: relative;
+	font-size: 30px;
+}
+
+.signature {
+	font-size: 18px;
+	font-family: 'Raleway', 'Cabin', Arial, sans-serif;
+	padding-left: 30%;
+	text-align: center;
+}
+
+header p {
+	opacity: 0.6;
+	position: center;
+	padding-top: 15px;
+	margin: 0;
+}
+
+.cover {
+	background: url('../img/night1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.cover-layer {
+	background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.navbar {
+	min-height: 0;
+	border: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border-bottom: 0;
+	border-top: 1px solid black;
+	color: white !important;
+}
+
+ul.nav a:hover {
+	background: rgba(204, 207, 188, 0.3) !important;
+	box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.5);
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+}
+
+.btn-default {
+	background: none;
+	border: none;
+	font-size: 20px;
+	text-align: center;
+}
+
+.about {
+	margin: 1em 2em 2em 2em;
+	font-family: 'Raleway', 'Cabin', Arial, sans-serif;
+}
+
+.about img {
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	border: 10px solid;
+}
+
+.resume img {
+	border: 2px solid;
+	box-shadow: 10px 10px 5px #888888;
+	margin-bottom: 5em;
+	margin-top: 1em;
+}
+
+.about p {
+	text-align: left;
+}
+
+.about ul {
+	list-style: outside;
+	padding-left: 0;
+	text-align: left;
+}
+
+.resume {
+	margin: 1em 10em 1em 10em;
+	border-top: 2px solid;
+}
+
+.projects {
+	margin: 1em 10em 1em 10em;
+	text-align: left;
+	border-top: 2px solid;
+}
+
+.projects h1 {
+	text-align: center;
+}
+
+.footer {
+	position: static;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 1em 7em 1em 2em;
+	height: 70px;
+	background-color: #2a2a2a;
+	color: white;
+	text-align: left;
+	line-height: 35px;
+	font-size: 16px;
+}
+
+.footer img {
+	display: inline-block;
+	float: right;
+	margin-right: 1em;
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	opacity: 0.6;
+}
+
+.footer img:hover {
+	opacity: 1.0;
+}
+
+a[href^="mailto"] {
+	font-style: italic;
+	color: #66CCCC;
+}
+
+@media screen and (max-width: 830px) {
+	h3 {
+		font-size: 35px;
+	}
+
+	.footer  {
+		padding: 1em 0 1em 1em;
+	}
+}
+
+@media screen and (min-width: 830px) {
+
+}
