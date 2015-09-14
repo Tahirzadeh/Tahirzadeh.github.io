@@ -44,7 +44,7 @@ header {
 	text-shadow: 2px 2px 4px #000000;
 }
 
-body h1 {
+body h1, h4 {
 	font-family: 'Cinzel', 'Eagle Lake', 'Raleway', 'Cabin', Arial, sans-serif;
 	font-size: 40px;
 }
@@ -113,7 +113,7 @@ header p {
 }
 
 ul.nav a:hover {
-	background: rgba(204, 207, 188, 0.3) !important;
+	background: rgba(204, 207, 188, 0.5) !important;
 	box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.5);
 }
 
@@ -130,23 +130,18 @@ nav li {
 }
 
 .about {
-	margin: 1em 2em 2em 2em;
+	margin: 1em 3em 2em 3em;
 	font-family: 'Raleway', 'Cabin', Arial, sans-serif;
 }
 
 .about img {
 	display: block;
-	width: 200px;
-	height: 200px;
-	margin: auto;
+	width: 300px;
+	height: auto;
+	margin: 5em auto 5em auto;
 	border: 10px solid;
-}
-
-.resume img {
-	border: 2px solid;
-	box-shadow: 10px 10px 5px #888888;
-	margin-bottom: 5em;
-	margin-top: 1em;
+	max-width: 400px;
+	box-shadow: 7px 7px 5px #888888;
 }
 
 .about p {
@@ -155,7 +150,7 @@ nav li {
 
 .about ul {
 	list-style: outside;
-	padding-left: 0;
+	padding-left: auto;
 	text-align: left;
 }
 
@@ -164,14 +159,49 @@ nav li {
 	border-top: 2px solid;
 }
 
+.resume img {
+	border: 2px solid;
+	box-shadow: 10px 10px 5px #888888;
+	margin-bottom: 5em;
+	margin-top: 1em;
+	width: 73%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.resume a {
+	color: inherit;
+}
+
 .projects {
-	margin: 1em 10em 1em 10em;
+	margin: 1em 7em 1em 7em;
 	text-align: left;
 	border-top: 2px solid;
 }
 
 .projects h1 {
 	text-align: center;
+}
+
+.projects h4 {
+	font-size: 25px;
+	margin-left: 1.5em;
+	padding-top: 0.5em;
+}
+
+.projects p {
+	margin: 0em 3em 1em 3em;
+	padding-right: 2em;
+	font-family: 'Raleway', 'Cabin', Arial, sans-serif;
+}
+
+.items {
+	background-color: lightgray;
+	margin: 1em 1em 1em 1em;
+	border-radius: 10px;
+	border: 2px solid black;
+	position: relative;
+	display: inline-block;
 }
 
 .footer {
@@ -205,6 +235,12 @@ nav li {
 a[href^="mailto"] {
 	font-style: italic;
 	color: #66CCCC;
+	text-decoration: none !important;
+}
+
+.footer a:hover {
+	color: white;
+	opacity: 0.9;
 }
 
 @media screen and (max-width: 830px) {
@@ -214,6 +250,10 @@ a[href^="mailto"] {
 
 	.footer  {
 		padding: 1em 0 1em 1em;
+	}
+
+	.resume img {
+		width: 100%;
 	}
 }
 
