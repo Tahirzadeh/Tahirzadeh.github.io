@@ -204,6 +204,29 @@ nav li {
 	display: inline-block;
 }
 
+.slideshow {
+	background-color: white;
+	width: 100%;
+	display: inline-block;
+	display: none;
+}
+
+.slideshow img{
+	width: 300px;
+	height: auto;
+	display: inline-block;
+}
+
+.fadein {
+	width: 300px;
+	height: 300px;
+}
+
+.fadein img {
+	width: 300px;
+	height: 300px;
+}
+
 .footer {
 	position: static;
 	right: 0;
