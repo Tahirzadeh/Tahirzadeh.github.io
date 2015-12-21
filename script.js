@@ -20,7 +20,7 @@ $(function() {
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 3000);
+                }, 1500);
                 return false;
             }
         }
@@ -34,4 +34,8 @@ $(function(){
                 .next('img').fadeIn()
                 .end().appendTo('.fadein');},
         3000);
+});
+
+$("p").click(function(){
+    $("p").hide();
 });

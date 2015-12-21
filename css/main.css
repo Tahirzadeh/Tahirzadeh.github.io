@@ -185,14 +185,24 @@ nav li {
 
 .projects h4 {
 	font-size: 25px;
-	margin-left: 1.5em;
-	padding-top: 0.5em;
+	padding-top:.5em;
 }
 
 .projects p {
-	margin: 0em 3em 1em 3em;
-	padding-right: 2em;
+	margin: 0em 1em 1em 1em;
 	font-family: 'Raleway', 'Cabin', Arial, sans-serif;
+}
+
+#example {
+	background-color: white;
+	margin: 2em 2em 0em 2em;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px white;
+	padding: 0 0 0 0;
+}
+
+#example h4, #example p {
+	text-align: center;
 }
 
 .items {
