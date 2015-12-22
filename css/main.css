@@ -44,7 +44,7 @@ header {
 	text-shadow: 2px 2px 4px #000000;
 }
 
-body h1, h4 {
+body h1, body h4 {
 	font-family: 'Cinzel', 'Eagle Lake', 'Raleway', 'Cabin', Arial, sans-serif;
 	font-size: 40px;
 }
@@ -199,6 +199,7 @@ nav li {
 	border-radius: 2px;
 	box-shadow: 1px 1px 3px white;
 	padding: 0 0 0 0;
+	opacity: 0.80;
 }
 
 #example h4, #example p {
@@ -293,3 +294,4 @@ a[href^="mailto"] {
 @media screen and (min-width: 830px) {
 
 }
+
