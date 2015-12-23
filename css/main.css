@@ -206,11 +206,20 @@ nav li {
 	text-align: center;
 }
 
+#example p {
+	padding-top: 5px;
+}
+
+#example img {
+	display: inline-block;
+	width: 100%;
+}
+
 .items {
 	background-color: lightgray;
 	margin: 1em 1em 1em 1em;
 	border-radius: 10px;
-	border: 2px solid black;
+	border: 2px dotted black;
 	position: relative;
 	display: inline-block;
 }
