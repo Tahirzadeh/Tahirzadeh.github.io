@@ -5,14 +5,22 @@
   <link rel="stylesheet" href="css/league-spartan-master/_webfonts/stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-  <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script type ="text/javascript" src="js/script.js"></script>
   <link rel="stylesheet" href="sidebar.css">
+  <script>
+    function myFunction() {
+      $("#h01").html("Hello jQuery")
+    }
+    $(document).ready(myFunction);
+  </script>
 
-  <title>Abbas T - Designing With Perfection In Mind</title>
+    <title>Abbas T - Designing With Perfection In Mind</title>
+
 </head>
 <body>
 
@@ -66,9 +74,9 @@
   <div class="cover">
     <div class ="cover-layer">
       <header>
-        <h2> Envision. Inspire. Innovate.  </h2>
-        <p class="quote">"If you were to design a story with me as the lead character, it would certainly be..... unique."</p>
-        <p class="signature">-Abbas Tahirzadeh</p>
+        <h2 class="fade-in one"> Envision. Inspire. Innovate.  </h2>
+        <p id="quote" class="fade-in two">"If you were to design a story with me as the lead character, it would certainly be..... unique."</p>
+        <p id="signature" class="fade-in three">-Abbas Tahirzadeh</p>
         <!--	<p><img src="img/download.png" id="changeArrow" onclick="changeImage()" alt="Down Arrow" height="100px" width="100px"> </p> -->
       </header>
     </div>
@@ -127,6 +135,7 @@
           <div class ="somethingelse">
             <div class="col-md-3" id="example">
               <h4>Echo</h4>
+              <img src="img/echoscreen.png" alt="Echo Log In Screen">
               <p>Designed, tested, and built a prototype of a mobile app to aid visually-impaired individuals in campus navigation and Produced detailed wireframes, established personas, interviewed target audience, and evaluated user feedback
               </p>
               <p><b>Skills Involved:</b> Project Management, Wireframing, Axure, Team Management, Visual Paradigm</p>
@@ -180,7 +189,7 @@
         <div class="row">
           <div class="col-md-3" id="example">
             <h4>Yelp Dataset Challenge (Tips Vs. Reviews Analysis)</h4>
-            <img src="img/yelp.png.PNG" alt="yelp">
+            <img src="img/yelp.png.PNG" alt="Yelp">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis iusto officiis similique. Autem corporis cum cumque deleniti facilis impedit laudantium magni minima mollitia officiis perferendis quaerat quo, repellendus repudiandae sit.
             </p>
             <p><b>Skills Involved:</b> Python, R, and Project Management.</p>
