@@ -151,9 +151,24 @@ header p {
 	color: white !important;
 }
 
+ul.nav a {
+	-webkit-transition: .1s all; /*Gives that smooth hover effect on/off animation when moving between buttons */
+	-webkit-transition-delay: .1s;
+	-moz-transition: .1s all;
+	-moz-transition-delay: .1s;
+	-o-transition: .1s all;
+	-o-transition-delay: .1s;
+	transition: .1s all;
+	transition-delay: .1s;
+}
+
 ul.nav a:hover {
 	background: rgba(204, 207, 188, 0.5);
 	box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.5);
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 ul.nav a:focus {
