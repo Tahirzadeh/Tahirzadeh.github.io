@@ -1,17 +1,3 @@
-/**
- * Created by raamz_000 on 8/21/2015.
- */
-
-/**
-function changeImage() {
-    var image = document.getElementById('changeArrow');
-    if (image.src.match("arrowOff")) {
-        image.src = "img/download.png";
-    } else {
-        image.src = "img/lion.png";
-    }
-} */
-
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -42,3 +28,25 @@ $('body').scrollspy({ target: '#spy', offset:80});
 $(function(){
     $('.fade').fadeIn('1500');
 });
+
+/*Interesting way for text to reveal itself*/
+/*
+$(function() {
+    $(".about").hide().show(3000)
+});
+*/
+
+$(".btn").mouseup(function(){
+    $(this).blur();
+})
+
+
+/**
+ function changeImage() {
+    var image = document.getElementById('changeArrow');
+    if (image.src.match("arrowOff")) {
+        image.src = "img/download.png";
+    } else {
+        image.src = "img/lion.png";
+    }
+} */
