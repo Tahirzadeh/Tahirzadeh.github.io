@@ -72,6 +72,7 @@ header h2 {
 	margin: 0 0 0 0;
 }
 
+/*Fade in CSS for the cover page text*/
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -341,7 +342,112 @@ a[href^="mailto"] {
 	}
 }
 
+/*CSS For the Circle Expanding Navbar*/
+.parent2 {
+	top:15px;
+	left:15px;
+	position:fixed;
+	display:block;
+	width:90px;
+	height:90px;
+	background-color:transparent;
+	border-radius:50%;
+	z-index:20;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.test1 {
+	width:60%;
+	height:60%;
+	background-color:transparent;
+	border-radius:50%;
+	position:absolute;
+	color:white;
+	text-align:center;
+	line-height:70px;
+	top:25%;
+	left:25%;
+	z-index:19;
+	transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+	opacity: 0;
+}
+.test2 {
+	width:60%;
+	height:60%;
+	background-color:transparent;
+	border-radius:50%;
+	position:absolute;
+	color:white;
+	text-align:center;
+	line-height:70px;
+	top:25%;
+	left:25%;
+	z-index:19;
+	transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+	opacity: 0;
+}
+.test3 {
+	width:60%;
+	height:60%;
+	background-color:transparent;
+	border-radius:50%;
+	position:absolute;
+	color:white;
+	text-align:center;
+	line-height:70px;
+	top:25%;
+	left:25%;
+	transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
+	opacity: 0;
+}
+.test4 {
+	width:60%;
+	height:60%;
+	background-color:transparent;
+	border-radius:50%;
+	position:absolute;
+	color:white;
+	text-align:center;
+	line-height:70px;
+	top:25%;
+	left:25%;
+	transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
+	opacity: 0;
+}
+.mask2 {
+	top:15px;
+	left:15px;
+	width:90px;
+	height:90px;
+	background:darkSlateGray;
+	border-radius:50%;
+	position:absolute;
+	z-index:21;
+	color:white;
+	text-align:center;
+	line-height:120px;
+	cursor:pointer;
+	position:fixed;
+	opacity: .5;
+}
+
+.fa {
+	transform: translate(0, .5em);
+}
+
+.parent2 a {
+	color: lightgray;
+}
+
+.parent2 a:hover {
+	color: white;
+}
+
+.test1:hover, .test2:hover, .test3:hover, .test4:hover, .mask2:hover {
+	opacity: 1.0;
+}
+
 @media screen and (min-width: 830px) {
 
 }
-

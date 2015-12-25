@@ -1,3 +1,4 @@
+/*Allows smooth scrolling to a link*/
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -13,6 +14,7 @@ $(function() {
     });
 });
 
+/*Fades in texts*/
 $(function(){
     $('.fadein img:gt(0)').hide();
     setInterval(function(){
@@ -29,24 +31,40 @@ $(function(){
     $('.fade').fadeIn('1500');
 });
 
-/*Interesting way for text to reveal itself*/
-/*
-$(function() {
-    $(".about").hide().show(3000)
-});
-*/
 
+
+/*Allows the circular sidebar to expand when clicked and change css traits*/
 $(".btn").mouseup(function(){
     $(this).blur();
-})
+});
 
+$(document).ready(function() {
 
-/**
- function changeImage() {
-    var image = document.getElementById('changeArrow');
-    if (image.src.match("arrowOff")) {
-        image.src = "img/download.png";
-    } else {
-        image.src = "img/lion.png";
-    }
-} */
+    var active1 = false;
+    var active2 = false;
+    var active3 = false;
+    var active4 = false;
+
+    $('.parent2').on('mousedown touchstart', function() {
+
+        if (!active1) $(this).find('.test1').css({'background-color': '#003333', 'transform': 'translate(0px,125px)', opacity: '.7'});
+        else $(this).find('.test1').css({'background-color': 'transparent', 'transform': 'none', opacity: '0'});
+        if (!active2) $(this).find('.test2').css({'background-color': 'darkblue', 'transform': 'translate(60px,105px)', opacity: '.7'});
+        else $(this).find('.test2').css({'background-color': 'transparent', 'transform': 'none', opacity: '0'});
+        if (!active3) $(this).find('.test3').css({'background-color': '#003333', 'transform': 'translate(105px,60px)', opacity: '.7'});
+        else $(this).find('.test3').css({'background-color': 'transparent', 'transform': 'none', opacity: '0'});
+        if (!active4) $(this).find('.test4').css({'background-color': 'darkblue', 'transform': 'translate(125px,0px)', opacity: '.7'});
+        else $(this).find('.test4').css({'background-color': 'transparent', 'transform': 'none', opacity: '0'});
+        active1 = !active1;
+        active2 = !active2;
+        active3 = !active3;
+        active4 = !active4;
+    });
+});
+
+/*Interesting way for text to reveal itself*/
+/*
+ $(function() {
+ $(".about").hide().show(3000)
+ });
+ */
