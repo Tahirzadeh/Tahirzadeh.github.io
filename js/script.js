@@ -33,11 +33,11 @@ $(function(){
 
 
 
-/*Allows the circular sidebar to expand when clicked and change css traits*/
 $(".btn").mouseup(function(){
     $(this).blur();
 });
 
+/*Allows the circular sidebar to expand when clicked and change css traits*/
 $(document).ready(function() {
 
     var active1 = false;
