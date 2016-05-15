@@ -14,6 +14,15 @@ $(function() {
     });
 });
 
+//Old hover box shadow effect for project examples
+//$(document).ready(function() {
+//    $(".example").mouseover(function () {
+//        $(this).css("box-shadow", "0px 0px 25px black");
+//    }).mouseleave(function () {
+//        $(this).css("box-shadow", "0px 0px 0px black");
+//    });
+//});
+
 /*Fades in texts*/
 $(function(){
     $('.fadein img:gt(0)').hide();
