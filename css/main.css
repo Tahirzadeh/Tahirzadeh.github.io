@@ -520,4 +520,19 @@ hr {
 	box-shadow: 0 4px 6px black;
 }
 
+.imageCenter {
+	text-align: center;
+}
+
+.blogimage {
+	text-align: center;
+	max-height: 500px;
+	width: auto;
+	max-width: 500px;
+	padding-left: auto;
+	padding-right: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
 
