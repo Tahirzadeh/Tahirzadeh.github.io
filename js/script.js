@@ -71,6 +71,28 @@ $(document).ready(function() {
     });
 });
 
+//Adds the loading text until the page completely loads
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 5000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
+
+
 /*Interesting way for text to reveal itself*/
 /*
  $(function() {
